@@ -6,8 +6,9 @@ import authRoutes from './routes/auth.routes';
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173' }));
-app.use(express.json());
-app.use('/auth', authRoutes);
-
-export default app;
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://a-pi-rest-com-autenticacao-jwt.vercel.app'
+  ]
+}));
