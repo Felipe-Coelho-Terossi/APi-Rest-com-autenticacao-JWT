@@ -10,7 +10,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://a-pi-rest-com-autenticacao-jwt.vercel.app'
+    'https://a-pi-rest-com-autenticacao-jwt.vercel.app',
+    /https:\/\/.*\.vercel\.app$/
   ]
 }));
 
