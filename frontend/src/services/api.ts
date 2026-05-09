@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://jwt-auth-api-fdlb.onrender.com',
 });
 
 // Injeta o access token em toda requisição automaticamente
